@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,75 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>HW3 Menu</title>
 </head>
+
 <body>
     <div class="w3-light-grey">
-        <div class="w3-deep-orange">
-            <h1 class="w3-center">Q&A</h1>
-            
+        <div class="w3-light-grey">
+            <h1 class="w3-center w3-bold"><b>Q&A</b></h1>
+
             <div>
-                <label for="whatCanISell">What can I sell?</label>
-                <select name="whatCanISell" id="whatCanISell">
-                    <option disabled>Products</option>
-                    <option disabled>Services</option>
-                </select>
-        
-                <label for="howMushTimeWill">How much time will I need to invest?</label>
-                <select name="howMushTimeWill" id="howMushTimeWill">
-                    <option disabled>Selling products typically takes less time investment</option>
-                    <option disabled>Selling services may take more time investment</option>
-                    <option disabled>We provide estimates</option>
-                </select>
+                <span class="dropBox w3-half w3-round">
+                    <select name="whatCanISell" id="whatCanISell" class="w3-light-blue w3-border w3-round-large w3-border">
+                        <option disabled selected>What can I sell?</option>
+                        <option disabled>Products</option>
+                        <option disabled>Services</option>
+                    </select>
+                </span>
+
+                <span class="dropBox w3-half">
+                    <select name="howMushTimeWill" id="howMushTimeWill" class="w3-light-blue w3-border w3-round-large">
+                        <option disabled selected>How much time will I need to invest?</option>
+                        <option disabled>Selling products typically takes less time investment</option>
+                        <option disabled>Selling services may take more time investment</option>
+                        <option disabled>We provide estimates</option>
+                    </select>
+                </span>
             </div>
 
             <div>
-                <label for="howMuchMoneyCan">How much money can I make?</label>
-                <select name="howMuchMoneyCan" id="howMuchMoneyCan">
-                    <option disabled>Some members earn thousands in side income!</option>
-                    <option disabled>Other members rely on us for their main source of income!</option>
-                </select>
+                <span class="dropBox w3-half">
+                    <select name="howMuchMoneyCan" id="howMuchMoneyCan" class="w3-light-blue w3-border w3-round-large">
+                        <option disabled selected>How much money can I make?</option>
+                        <option disabled>Some members earn thousands in side income!</option>
+                        <option disabled>Other members rely on us for their main source of income!</option>
+                    </select>
+                </span>
 
-                <label for="howDoIPrice">How do I price my service?</label>
-                <select name="howDoIPrice" id="howDoIPrice">
-                    <option disabled>We provide price estimates</option>
-                    <option disabled>Products tend to be cheaper than services</option>
-                </select>
+                <span class="dropBox w3-half">
+                    <select name="howDoIPrice" id="howDoIPrice" class="w3-light-blue w3-border w3-round-large">
+                        <option disabled selected>How do I price my service?</option>
+                        <option disabled>We provide price estimates</option>
+                        <option disabled>Products tend to be cheaper than services</option>
+                    </select>
+                </span>
             </div>
-
 
             <div>
-                <label for="howMuchDoesIt">How much does it cost?</label>
-                <select name="howMuchDoesIt" id="howMuchDoesIt">
-                    <option disabled>Membership is free!</option>
-                    <option disabled>Gig survives by taking a small cut from every transaction</option>
-                </select>
+                <span class="dropBox w3-half">
+                    <select name="howMuchDoesIt" id="howMuchDoesIt" class="w3-light-blue w3-border w3-round-large">
+                        <option disabled selected>How much does it cost?</option>
+                        <option disabled>Membership is free!</option>
+                        <option disabled>Gig survives by taking a small cut from every transaction</option>
+                    </select>
+                </span>
 
-                <label for="howDoIGet">How do I get paid?</label>
-                <select name="howDoIGet" id="howDoIGet">
-                    <option disabled>We send out a direct deposite at the end of every month!</option>
-                    <option disabled>No hassel payment guaranteed!</option>
-                </select>
+                <span class="dropBox w3-half">
+                    <select name="howDoIGet" id="howDoIGet" class="w3-light-blue w3-border w3-round-large">
+                        <option disabled selected>How do I get paid?</option>
+                        <option disabled>We send out a direct deposite at the end of every month!</option>
+                        <option disabled>No hassel payment guaranteed!</option>
+                    </select>
+                </span>
             </div>
-        </div>
-
-        <p class="w3-center">Sign up and create your first Gig today!</p>
-        
-        <div class="w3-center">
-            <button class="w3-button w3-blue w3-round">Get started</button>
         </div>
     </div>
+    <div class="signUpPara">
+        <p class="w3-center">Sign up and create your first Gig today!</p>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="w3-center">
+        <a href="getStarted.html"><button class="getStart w3-button w3-light-blue w3-round">Get started</button></a>
+        <script src="script.js"></script>
 </body>
+
 </html>
